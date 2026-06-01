@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josephine Mobile Massage & Wellness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Inter, sans-serif; background:#f7f3ef; color:#3b302b; }
+nav { display:flex; justify-content:space-between; padding:20px 8%; position:fixed; width:100%; background:rgba(247,243,239,0.8); backdrop-filter:blur(10px); z-index:10; }
+.logo { font-family:"Cormorant Garamond", serif; font-size:28px; color:#6e4c3a; letter-spacing:2px; }
+nav ul { display:flex; gap:25px; list-style:none; }
+nav a { text-decoration:none; color:#3b302b; font-size:14px; }
+.hero { height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; padding:0 8%; padding-top:80px; }
+.hero-text h1 { font-family:"Cormorant Garamond", serif; font-size:64px; color:#6e4c3a; margin-bottom:20px; }
+.hero-text p { max-width:500px; line-height:1.7; }
+.hero-img { background:url('images/hero.jpg') center/cover; height:70%; border-radius:20px; }
+.btn { display:inline-block; background:#6e4c3a; color:white; padding:14px 26px; border-radius:40px; text-decoration:none; margin-top:20px; }
+.about { display:grid; grid-template-columns:1fr 1fr; padding:100px 8%; gap:50px; align-items:center; }
+.about-img { background:url('images/massage1.jpg') center/cover; height:500px; border-radius:20px; }
+.services { padding:100px 8%; text-align:center; }
+.services h2 { font-family:"Cormorant Garamond"; font-size:42px; margin-bottom:40px; color:#6e4c3a; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+.card { background:white; padding:25px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.08); }
+.gallery { padding:100px 8%; text-align:center; }
+.gallery-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.img { height:350px; border-radius:20px; }
+.img1 { background:url('images/massage2.jpg') center/cover; }
+.img2 { background:url('images/massage3.jpg') center/cover; }
+.cta { text-align:center; padding:120px 8%; background:linear-gradient(135deg,#f7f3ef,#efe2d8); }
+.contact { text-align:center; padding:80px 8%; }
+footer { text-align:center; padding:20px; background:#6e4c3a; color:white; }
+.whatsapp-float { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:14px 18px; border-radius:50px; text-decoration:none; z-index:100; }
+@media(max-width:768px){ .hero, .about{ grid-template-columns:1fr; text-align:center; } .hero-text h1{ font-size:40px; } nav ul{ display:none; } .hero-img, .about-img{ height:300px; } }
+</style>
+</head>
+<body>
+
+<a class="whatsapp-float" href="https://wa.me/27818761780?text=Hi%20Josephine,%20I'd%20like%20to%20book%20a%20massage">Book on WhatsApp</a>
+
+<header>
+<nav>
+<div class="logo">JOSEPHINE</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Wellness Where You Stay</h1>
+<p>Luxury mobile massage treatments delivered to your hotel, guesthouse, Airbnb, or private residence in Plettenberg Bay.</p>
+<a class="btn" href="https://wa.me/27818761780?text=Hi%20Josephine,%20I'd%20like%20to%20book%20a%20massage">Book Now</a>
+</div>
+<div class="hero-img"></div>
+</section>
+
+<section id="about" class="about">
+<div class="about-img"></div>
+<div class="about-text">
+<h2>Relaxation Delivered To Your Door</h2>
+<p>
+Josephine runs a mobile massage and wellness team in Plettenberg Bay. We provide in-room massages for guests staying at hotels, lodges, guesthouses, and Airbnbs — perfect for relaxing after a day out. 
+<br><br>
+We help accommodations enhance the guest experience with convenient treatments like full body, aromatherapy, hot stone, and couples massages. Partner with us to offer wellness on demand.
+</p>
+</div>
+</section>
+
+<section id="services" class="services">
+<h2>Signature Treatments</h2>
+<div class="grid">
+<div class="card"><h3>Quick Relief</h3><p>45 Minutes</p><strong>R600</strong></div>
+<div class="card"><h3>Signature Massage</h3><p>60 Min Full Body Swedish</p><strong>R750</strong></div>
+<div class="card"><h3>Deep Reset</h3><p>90 Minutes</p><strong>R1050</strong></div>
+<div class="card"><h3>Couples Massage</h3><p>60 Minutes</p><strong>R1500</strong></div>
+</div>
+</section>
+
+<section id="gallery" class="gallery">
+<h2>Experience</h2>
+<div class="gallery-grid">
+<div class="img img1"></div>
+<div class="img img2"></div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Book Your In-Room Spa Experience</h2>
+<a class="btn" href="https://wa.me/27818761780?text=Hi%20Josephine,%20I'd%20like%20to%20book%20a%20massage">Start Booking</a>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>📞 081 876 1780</p>
+<p>✉ josephinemutyaviri268@gmail.com</p>
+</section>
+
+<footer>
+<p>Josephine Mobile Massage & Wellness • Plettenberg Bay</p>
+</footer>
+</body>
+</html>
